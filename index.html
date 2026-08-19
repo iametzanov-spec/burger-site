@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burger GO</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container header-inner">
+
+            <a href="#" class="logo">
+                BURGER<span>GO</span>
+            </a>
+
+            <nav class="nav">
+                <a href="#home" data-ru="Главная" data-kz="Басты бет">
+                    Главная
+                </a>
+
+                <a href="#menu" data-ru="Меню" data-kz="Мәзір">
+                    Меню
+                </a>
+
+                <a href="#delivery" data-ru="Доставка" data-kz="Жеткізу">
+                    Доставка
+                </a>
+
+                <a href="#contacts" data-ru="Контакты" data-kz="Байланыс">
+                    Контакты
+                </a>
+            </nav>
+
+
+            <div class="header-right">
+
+                <div class="language">
+                    <button id="ruBtn" class="language-btn active">
+                        RU
+                    </button>
+
+                    <button id="kzBtn" class="language-btn">
+                        KZ
+                    </button>
+                </div>
+
+                <button class="cart-button">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p
+                        class="hero-label"
+                        data-ru="БУРГЕРЫ С ДОСТАВКОЙ"
+                        data-kz="БУРГЕРЛЕРДІ ЖЕТКІЗУ"
+                    >
+                        БУРГЕРЫ С ДОСТАВКОЙ
+                    </p>
+
+                    <h1
+                        data-ru="Голоден? Закажи настоящий бургер!"
+                        data-kz="Қарның ашты ма? Нағыз бургерге тапсырыс бер!"
+                    >
+                        Голоден?<br>
+                        Закажи настоящий бургер!
+                    </h1>
+
+                    <p
+                        class="hero-description"
+                        data-ru="Сочные бургеры, хрустящая картошка и быстрая доставка прямо к вашей двери."
+                        data-kz="Шырынды бургерлер, қытырлақ картоп және жылдам жеткізу."
+                    >
+                        Сочные бургеры, хрустящая картошка и быстрая доставка прямо к вашей двери.
+                    </p>
+
+                    <a
+                        href="#menu"
+                        class="hero-button"
+                        data-ru="Смотреть меню"
+                        data-kz="Мәзірді көру"
+                    >
+                        Смотреть меню
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU -->
+
+        <section class="menu" id="menu">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p
+                        data-ru="НАШЕ МЕНЮ"
+                        data-kz="БІЗДІҢ МӘЗІР"
+                    >
+                        НАШЕ МЕНЮ
+                    </p>
+
+                    <h2
+                        data-ru="Выбирай свой бургер"
+                        data-kz="Өзіңе ұнайтын бургерді таңда"
+                    >
+                        Выбирай свой бургер
+                    </h2>
+
+                </div>
+
+
+                <div class="products">
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image burger-one"></div>
+
+                        <div class="product-info">
+
+                            <h3
+                                data-ru="Classic Burger"
+                                data-kz="Classic Burger"
+                            >
+                                Classic Burger
+                            </h3>
+
+                            <p
+                                data-ru="Говяжья котлета, сыр, салат и фирменный соус."
+                                data-kz="Сиыр еті, ірімшік, салат және фирмалық соус."
+                            >
+                                Говяжья котлета, сыр, салат и фирменный соус.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>
+                                    2 990 ₸
+                                </strong>
+
+                                <button
+                                    class="add-button"
+                                    data-ru="Добавить"
+                                    data-kz="Қосу"
+                                >
+                                    Добавить
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image burger-two"></div>
+
+                        <div class="product-info">
+
+                            <h3
+                                data-ru="Cheese Burger"
+                                data-kz="Cheese Burger"
+                            >
+                                Cheese Burger
+                            </h3>
+
+                            <p
+                                data-ru="Двойной сыр, сочная котлета и фирменный соус."
+                                data-kz="Қос ірімшік, шырынды котлета және фирмалық соус."
+                            >
+                                Двойной сыр, сочная котлета и фирменный соус.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>
+                                    3 490 ₸
+                                </strong>
+
+                                <button
+                                    class="add-button"
+                                    data-ru="Добавить"
+                                    data-kz="Қосу"
+                                >
+                                    Добавить
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image burger-three"></div>
+
+                        <div class="product-info">
+
+                            <h3
+                                data-ru="Double Burger"
+                                data-kz="Double Burger"
+                            >
+                                Double Burger
+                            </h3>
+
+                            <p
+                                data-ru="Две говяжьи котлеты, сыр, овощи и соус."
+                                data-kz="Екі сиыр котлетасы, ірімшік, көкөністер және соус."
+                            >
+                                Две говяжьи котлеты, сыр, овощи и соус.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>
+                                    3 990 ₸
+                                </strong>
+
+                                <button
+                                    class="add-button"
+                                    data-ru="Добавить"
+                                    data-kz="Қосу"
+                                >
+                                    Добавить
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 4 -->
+
+                    <div class="product-card">
+
+                        <div class="product-image fries"></div>
+
+                        <div class="product-info">
+
+                            <h3
+                                data-ru="Картофель фри"
+                                data-kz="Фри картобы"
+                            >
+                                Картофель фри
+                            </h3>
+
+                            <p
+                                data-ru="Хрустящий картофель с солью."
+                                data-kz="Тұз қосылған қытырлақ картоп."
+                            >
+                                Хрустящий картофель с солью.
+                            </p>
+
+                            <div class="product-bottom">
+
+                                <strong>
+                                    990 ₸
+                                </strong>
+
+                                <button
+                                    class="add-button"
+                                    data-ru="Добавить"
+                                    data-kz="Қосу"
+                                >
+                                    Добавить
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DELIVERY -->
+
+        <section class="delivery" id="delivery">
+
+            <div class="container delivery-content">
+
+                <div>
+
+                    <p
+                        class="section-label"
+                        data-ru="ДОСТАВКА"
+                        data-kz="ЖЕТКІЗУ"
+                    >
+                        ДОСТАВКА
+                    </p>
+
+                    <h2
+                        data-ru="Горячий бургер уже едет к тебе"
+                        data-kz="Ыстық бургер сізге жолда"
+                    >
+                        Горячий бургер уже едет к тебе
+                    </h2>
+
+                    <p
+                        data-ru="Заказывай от 5 000 ₸ и получай бесплатную доставку."
+                        data-kz="5 000 ₸ бастап тапсырыс берсеңіз, жеткізу тегін."
+                    >
+                        Заказывай от 5 000 ₸ и получай бесплатную доставку.
+                    </p>
+
+                </div>
+
+
+                <div class="delivery-info">
+
+                    <div>
+                        <strong>30–45</strong>
+
+                        <span
+                            data-ru="минут"
+                            data-kz="минут"
+                        >
+                            минут
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>5 000 ₸</strong>
+
+                        <span
+                            data-ru="бесплатная доставка"
+                            data-kz="тегін жеткізу"
+                        >
+                            бесплатная доставка
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTS -->
+
+        <section class="contacts" id="contacts">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p
+                        data-ru="КОНТАКТЫ"
+                        data-kz="БАЙЛАНЫС"
+                    >
+                        КОНТАКТЫ
+                    </p>
+
+                    <h2
+                        data-ru="Мы всегда на связи"
+                        data-kz="Біз әрқашан байланыстамыз"
+                    >
+                        Мы всегда на связи
+                    </h2>
+
+                </div>
+
+                <div class="contacts-grid">
+
+                    <div>
+                        <span>📞</span>
+                        <h3>+7 700 000 00 00</h3>
+                    </div>
+
+                    <div>
+                        <span>📍</span>
+
+                        <h3
+                            data-ru="Алматы, Казахстан"
+                            data-kz="Алматы, Қазақстан"
+                        >
+                            Алматы, Казахстан
+                        </h3>
+                    </div>
+
+                    <div>
+                        <span>🕐</span>
+
+                        <h3
+                            data-ru="10:00 — 02:00"
+                            data-kz="10:00 — 02:00"
+                        >
+                            10:00 — 02:00
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="logo">
+                BURGER<span>GO</span>
+            </div>
+
+            <p
+                data-ru="Вкусные бургеры с доставкой по Алматы."
+                data-kz="Алматы бойынша дәмді бургерлерді жеткізу."
+            >
+                Вкусные бургеры с доставкой по Алматы.
+            </p>
+
+            <div class="footer-bottom">
+
+                © 2026 BURGER GO
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CART -->
+
+    <div class="cart">
+
+        <div class="cart-header">
+
+            <h2
+                data-ru="Корзина"
+                data-kz="Себет"
+            >
+                Корзина
+            </h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            <span
+                data-ru="Итого:"
+                data-kz="Барлығы:"
+            >
+                Итого:
+            </span>
+
+            <strong id="cartTotal">
+                0 ₸
+            </strong>
+
+        </div>
+
+        <button
+            class="checkout-button"
+            data-ru="Оформить заказ"
+            data-kz="Тапсырыс беру"
+        >
+            Оформить заказ
+        </button>
+
+    </div>
+
+
+    <div class="cart-overlay"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
